@@ -39,6 +39,13 @@ A API foi desenvolvida para atender aos seguintes requisitos:
 * **Limite de Alunos por Turma**: Cada turma possui um número máximo de 5 alunos. Não é possível matricular novos alunos após esse limite ser atingido.
 * **Restrição de Exclusão**: Uma turma não pode ser excluída se ela possuir alunos matriculados.
 
+ ### Autenticação e Autorização
+
+Foi implementado um sistema de segurança para a API
+
+* **ASP.NET Core Identity**: Para o gerenciamento de usuários, incluindo registro, login e roles.
+* **JSON Web Token (JWT)**: Para a geração de tokens de acesso seguros, que permitem a autorização em endpoints protegidos.
+
 ## 🚀 Tecnologias Utilizadas
 
 * **ASP.NET Core**: Framework principal para a construção da API.
@@ -46,7 +53,3 @@ A API foi desenvolvida para atender aos seguintes requisitos:
 * **SQL Server**: Banco de dados utilizado para persistência das informações.
 * **Swagger/OpenAPI**: Ferramenta para visualização, interação e teste dos endpoints da API.
 
-
- ## ⚙️ **Em Desenvolvimento**
-
-* Para garantir a segurança dos dados da API, irei implementar um sistema de autenticação e autorização com Identity e JSON Web Token (JWT).

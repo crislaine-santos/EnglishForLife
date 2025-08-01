@@ -1,11 +1,13 @@
 ﻿using EnglishForLife.Data;
 using EnglishForLife.Models;
 using EnglishForLife.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace EnglishForLife.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class AlunoController : ControllerBase
@@ -19,6 +21,7 @@ namespace EnglishForLife.Controllers
             _alunoService = alunoService;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Aluno>>> GetAlunos()
         {

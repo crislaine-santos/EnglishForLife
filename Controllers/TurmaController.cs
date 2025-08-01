@@ -1,10 +1,12 @@
 ﻿using EnglishForLife.Data;
 using EnglishForLife.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace EnglishForLife.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class TurmaController : ControllerBase
@@ -16,6 +18,7 @@ namespace EnglishForLife.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Turma>>> GetTurmas()
         {
