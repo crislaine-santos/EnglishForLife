@@ -1,0 +1,6 @@
+@EnglishForLife_HostAddress = http://localhost:5136
+
+GET {{EnglishForLife_HostAddress}}/englishforlife/
+Accept: application/json
+
+###
