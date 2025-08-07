@@ -53,3 +53,7 @@ Foi implementado um sistema de segurança para a API
 * **SQL Server**: Banco de dados utilizado para persistência das informações.
 * **Swagger/OpenAPI**: Ferramenta para visualização, interação e teste dos endpoints da API.
 
+https://github.com/user-attachments/assets/6ac00213-cb02-44bc-a2d2-473461638a98
+
+
+
